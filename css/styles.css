@@ -183,7 +183,7 @@ h2.brand-name {
         border: 2px solid transparent;
     }
 
-    .main-navbar .nav-pills .nav-link.active {
+    .main-navbar .nav-link.active {
         border: 2px solid #CC0033;
     }
 
