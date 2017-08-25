@@ -120,7 +120,7 @@ a.anchor {
     background-color: #fff;
 }
 
-h2.brand-name {
+.brand-name {
     display: block;
     font-family: 'Playfair Display SC', serif;
     font-size: 78px; /*72pt*/
@@ -128,7 +128,7 @@ h2.brand-name {
     text-align: right;
 }
 
-    h2.brand-name span {
+    .brand-name span {
         display: block;
         font-family: 'Playfair Display SC', serif;
         font-size: 36px; /*36pt*/
@@ -136,7 +136,7 @@ h2.brand-name {
         margin-top: -10px;
     }
 
-.header-navigation h2.brand-name {
+.header-navigation .brand-name {
     color: #CC0033;
     height: 180px;
     width: 86%;
@@ -144,7 +144,7 @@ h2.brand-name {
     margin: 0 auto;
 }
 
-.header-navigation h2.brand-name span {
+.header-navigation .brand-name span {
     color: #333;
 }
 
@@ -155,7 +155,11 @@ h2.brand-name {
     z-index: 10!important; /* opera fix */
 }
 
-        .main-navbar h2.brand-name {
+.main-navbar > a:hover {
+    text-decoration:none;
+}
+
+        .main-navbar .brand-name {
             display: block;
             font-size: 48px; /*72pt*/
             color: #fff;
@@ -166,12 +170,12 @@ h2.brand-name {
         }
 
     @media (max-width: 767px) {
-        .main-navbar h2.brand-name {
+        .main-navbar .brand-name {
             margin-left: 0;
         }
     }
 
-           .main-navbar h2.brand-name span {
+           .main-navbar .brand-name span {
                 font-size: 26px; /*36pt*/
                 color: #fff;
             }
