@@ -1,0 +1,238 @@
+﻿.main-container {
+    min-width: 375px;
+}
+
+h3 {
+    font-family: 'Dancing Script', serif;
+    color: #cc0033;
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    h3 {
+        margin-top: 20px;
+    }
+}
+
+p {
+    font-family: 'Domine', serif;
+    color: #333;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 50px; 
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 961px) {
+    section.type-photo {
+        background-image: url('../images/photo-tablet.jpg');
+    }
+}
+
+
+section.type-photo {
+    padding: 0;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+}
+
+section.type-photo {
+    background-image: url('../images/photo-mobile.jpg');
+}
+
+@media (min-width: 961px) {
+    section.type-photo {
+        background-image: url('../images/photo-tablet.jpg');
+    }
+}
+
+@media (min-width: 1281px) {
+    section.type-photo {
+        background-image: url('../images/photo-desktop.jpg');
+    }
+}
+
+
+.header-navigation {
+    width: 340px;
+    height: 320px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto; 
+}
+
+@media (min-width: 961px) {
+    .header-navigation {
+        right: 60px;
+        top: 60px;
+        left: auto;
+        margin: 0;
+    }   
+}
+
+@media (min-width: 1281px) {
+    .header-navigation {
+        right: 80px;
+    }   
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px; /*to fix header height*/
+    visibility: hidden;
+}
+
+.button {
+    font-family: 'Domine', serif;
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #CC0033;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-align: center;
+}
+
+.button:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+}
+
+h2.brand-name {
+    display: block;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 78px; /*72pt*/
+    text-transform: uppercase;
+    text-align: right;
+}
+
+    h2.brand-name span {
+        display: block;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 36px; /*36pt*/
+        text-transform: uppercase;
+        margin-top: -10px;
+    }
+
+.header-navigation h2.brand-name {
+    color: #CC0033;
+    height: 180px;
+    width: 86%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.header-navigation h2.brand-name span {
+    color: #333;
+}
+
+.main-navbar {
+    font-family: 'Playfair Display SC', serif;
+    background-color: #333;
+    color: #fff;
+    z-index: 10!important; /* opera fix */
+}
+
+        .main-navbar h2.brand-name {
+            display: block;
+            font-size: 48px; /*72pt*/
+            color: #fff;
+            text-align: right;
+            padding: 0;
+            line-height: 0.9em;
+            margin: 5px 10px 5px 30px;
+        }
+
+    @media (max-width: 767px) {
+        .main-navbar h2.brand-name {
+            margin-left: 0;
+        }
+    }
+
+           .main-navbar h2.brand-name span {
+                font-size: 26px; /*36pt*/
+                color: #fff;
+            }
+
+    .main-navbar .nav-pills .nav-link.active,
+    .main-navbar .nav-link {
+        color: #fff;
+        background: none;
+        border: 2px solid transparent;
+    }
+
+    .main-navbar .nav-pills .nav-link.active {
+        border: 2px solid #CC0033;
+    }
+
+.sticky-wrapper {
+    z-index: 10;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.location-logos img {
+    margin: 5px 20px;
+}
+
+.google-map {
+    box-sizing: content-box;
+    width: 100%;
+    height: 515px;
+    background-color: #ccc;
+    margin: 0 15px;
+}
+
+.img-team {
+    margin-bottom: 30px;
+}
+
+footer {
+    min-height: 175px;
+    font-family: 'Domine', serif;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 0 10px;
+    }
+}
+
+
+/*@media (max-width: 480px) {
+    .form-line {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}*/
