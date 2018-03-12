@@ -32,13 +32,6 @@ section {
     }
 }
 
-@media (min-width: 961px) {
-    section.type-photo {
-        background-image: url('../images/photo-tablet.jpg');
-    }
-}
-
-
 section.type-photo {
     padding: 0;
     background-size: cover;
@@ -49,47 +42,118 @@ section.type-photo {
     position: relative;
 }
 
+
 section.type-photo {
-    background-image: url('../images/photo-mobile.jpg');
-}
-
-@media (min-width: 961px) {
-    section.type-photo {
-        background-image: url('../images/photo-tablet.jpg');
-    }
-}
-
-@media (min-width: 1281px) {
-    section.type-photo {
-        background-image: url('../images/photo-desktop.jpg');
-    }
+    background-image: url('../images/photo-desktop.jpg');
 }
 
 
-.header-navigation {
+.main-picture-ads {
+    color: #333;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
     width: 340px;
-    height: 320px;
+    height: 340px;
     position: absolute;
-    top: 10px;
+    top: 100px;
     right: 0;
     left: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
+    background-color: #fff;
+    -ms-opacity: 0.9;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 8px; /* base font size */
+}
+
+    .main-picture-ads .brand-name {
+        color: #CC0033;
+        padding-top: 60px;
+    }
+
+.main-picture-ads .text-md {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.main-picture-ads .text-lg {
+    font-size: 2.6em;
+    margin-top: 20px;
+}
+
+.main-picture-ads .text-lg:last-child {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .main-picture-ads {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 130px;
+        left: auto;
+        right: 130px;
+        font-size: 10px;
+    }
+    
+    .brand-name {
+        font-size: 50px;
+    }
+
+}
+
+.main-picture-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 10px;
+
+}
+
+.main-picture-menu__item {
+    width: 50%;
+    padding: 5px;
+}
+
+.main-picture-menu {
+    display: none;
 }
 
 @media (min-width: 961px) {
-    .header-navigation {
-        right: 60px;
-        top: 60px;
-        left: auto;
-        margin: 0;
-    }   
+    .main-picture-menu {
+        display: flex;
+        margin: 0 50px;
+    }
+
+    .main-picture-menu__item {
+        padding: 0;
+        width: auto;
+    }
 }
 
-@media (min-width: 1281px) {
-    .header-navigation {
-        right: 80px;
-    }   
+.main-picture-menu .main-picture-menu__item a {
+    position: relative;
+    display: inline-block;
+
 }
+
+    .main-picture-menu .main-picture-menu__item span {
+        background-color: #fff; 
+        -ms-opacity: 0.5;
+        opacity: 0.5;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        font-family: 'Playfair Display SC', serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+    }
+
 
 a.anchor {
     display: block;
@@ -98,62 +162,37 @@ a.anchor {
     visibility: hidden;
 }
 
-.button {
-    font-family: 'Domine', serif;
-    font-size: 30px;
-    display: block;
-    width: 100%;
-    height: 70px;
-    background-color: #CC0033;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 70px;
-    text-align: center;
-}
-
-.button:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
 .navbar-light .navbar-toggler {
     background-color: #fff;
 }
 
 .brand-name {
     display: block;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 78px; /*72pt*/
-    text-transform: uppercase;
-    text-align: right;
+    font-family: 'Dancing Script', serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-    .brand-name span {
-        display: block;
-        font-family: 'Playfair Display SC', serif;
-        font-size: 36px; /*36pt*/
-        text-transform: uppercase;
-        margin-top: -10px;
-    }
-
-.header-navigation .brand-name {
-    color: #CC0033;
-    height: 180px;
-    width: 86%;
-    padding-top: 30px;
-    margin: 0 auto;
-}
-
-.header-navigation .brand-name span {
-    color: #333;
-}
 
 .main-navbar {
     font-family: 'Playfair Display SC', serif;
+    font-size: 18px;
     background-color: #333;
     color: #fff;
-    z-index: 10!important; /* opera fix */
+    z-index: 10 !important; /* opera fix */
+    padding: 8px 50px;
 }
+
+@media (max-width: 992px) {
+    .main-navbar {
+        padding: 8px 15px;
+    }
+}
+
+.main-navbar .nav {
+    width: 100%;
+}
+
 
 .main-navbar > a:hover {
     text-decoration:none;
@@ -161,12 +200,11 @@ a.anchor {
 
         .main-navbar .brand-name {
             display: block;
-            font-size: 48px; /*72pt*/
             color: #fff;
             text-align: right;
             padding: 0;
             line-height: 0.9em;
-            margin: 5px 10px 5px 30px;
+            margin: 10px 45px 10px 0;
         }
 
     @media (max-width: 767px) {
@@ -174,11 +212,6 @@ a.anchor {
             margin-left: 0;
         }
     }
-
-           .main-navbar .brand-name span {
-                font-size: 26px; /*36pt*/
-                color: #fff;
-            }
 
     .main-navbar .nav-pills .nav-link.active,
     .main-navbar .nav-link {
@@ -213,6 +246,11 @@ a.anchor {
 
 .img-team {
     margin-bottom: 30px;
+}
+
+.contant-info {
+    margin-top: 20px;
+    padding: 5%;
 }
 
 footer {
