@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Domine|Playfair+Display+SC|Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine|Playfair+Display+SC|Dancing+Script|Roboto|Lato" rel="stylesheet">
 
     <title>Syndal Gardens</title>
 
@@ -31,17 +31,16 @@
     
 <div class="main-container">
     
-    <section class="type-photo">
+    <header class="type-photo">
         <div class="main-picture-ads">
             <h1 class="brand-name">Syndal Gardens</h1>
-            <div class="text-lg">Grand Opening</div>
-            <div class="text-md">Off Plan Apartments for Sale</div>
-            <div class="text-md">1, 2 & 3 Bedrooms Available.</div>
-            <div class="text-md">Price starts from</div>
-            <div class="text-lg">$ 529,000 Only</div>
+            <div class="text-md">Apartments at Glen Waverley</div>
+            <div class="text-lg">now on sale</div>
+            <div class="text-md">from <span>529`000</span> only</div>
+            <a class="enquire-now" href="#enquire-now">Enquire Now</a>
         </div>
 
-        <div class="main-picture-menu justify-content-between">
+        <!--<div class="main-picture-menu justify-content-between">
             <div class="main-picture-menu__item">
                 <a href="#project-overview">
                     <img class="img-fluid" src="images/Project-Overview.jpg" alt="Project Overview" />
@@ -66,9 +65,9 @@
                     <span>Enquire<br /> Now</span>
                 </a>
             </div>
-        </div>
+        </div>-->
         
-    </section>
+    </header>
 
 
     <nav id="navbar" class="navbar main-navbar navbar-expand-lg navbar-dark">
@@ -78,21 +77,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="nav navbar-nav justify-content-between">
+            <ul class="nav navbar-nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project-overview">Project Overview</a>
+                    <a class="nav-link" href="#apartments">Apartments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#superb-location">Superb Location</a>
+                    <a class="nav-link" href="#location">Location</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#our-team">Our Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#enquire-now">Enquire Now</a>
+                    <a class="nav-link" href="#enquire-now">Contact</a>
                 </li>
             </ul>
         </div>
@@ -100,17 +96,18 @@
 
         
     <section>
-        <a class="anchor" id="project-overview"></a>
+        <a class="anchor" id="apartments"></a>
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <img class="img-fluid img-responsive" src="images/project-overview-building-front-page.jpg" alt="building picture"/>
             </div>
-            <div class="col-md-6 col-xs-12">
-                <h3>Enjoy living at Syndal Gardens</h3>
-                <p>Syndal Gardens is a new apartment development in preconstruction at 37-39 Hunter Street,
-                    Glen Waverley, just minutes walk from Syndal train station.  
-                    This 3 storey building is planned with underground parking. 
-                    1-, 2- and 3-bedroom apartments are coming soon.
+            <div class="col-md-6 col-xs-12 px-lg-5">
+                <h3 class="text-center">Enjoy living at Syndal Gardens</h3>
+                <p class="text-center">
+                    Syndal Gardens is a new apartment development, located in one of  Glen Waverley`s most desirable area, minutes walk from train station. It provides the ultimate in essential apartment living surrounded by low-maintenance, unbeatable lifestyle convenience.
+                </p>
+                <p class="text-center">
+                    Syndal Gardens is a 3-storey building with underground parking. 1, 2 & 3-bedroom apartments with liveable floor plans,  open interiors and a private balcony.
                 </p>
             </div>
         </div>
@@ -118,14 +115,15 @@
         <br/>
 
         <div class="row">
-            <div class="col-md-5 col-xs-12">
-                <p>
-                    <br />
-                    Full of light, livable floor plans,
-                    <br />
-                    open interiors, designer finishings.
-                    <br/>
-                    Private balcony.
+            <div class="col-md-5 col-xs-12 px-lg-5">
+                <p class="text-center">
+                    Contemporary design and carefully  considered spaces offer optimal  functional living for the modern lifestyle.
+                </p>
+                <p class="text-center">
+                    A warm neutral colour palette of interior is complimented with solid European Oak flooring creating a welcoming and calm environment.
+                </p>
+                <p class="text-center">
+                    The kitchen is fitted with quality stainless steel appliances and reconstructed bench-tops adding subtle textures.
                 </p>
             </div>
             <div class="col-md-7 col-xs-12">
@@ -133,7 +131,6 @@
             </div>
 
         </div>
-        <p>More floor plans are coming soon...</p>
         
         <div class="row">
             <div class="col-md-4 col-xs-12">
@@ -158,72 +155,60 @@
 
 
     <section>
-        <a class="anchor" id="superb-location"></a>
-        <div class="row">
+        <a class="anchor" id="location"></a>
+        <div class="row text-center">
             <div class="col-md-6 col-xs-12">
                 <h3>Location matters</h3>
                 <p>
-                    Residents will enjoy easy access to Syndal train station, bus stops, Monash and Eastlink Freeways to reach Melbourne, shopping centers at Box Hill, Chadstone, the Knox and the Glen. The population of Monash City is very diverse and multi cultural. The place is offering a variety of cuisine. Syndal is surrounded by public parks with tennis courts, walking and bike paths. Monash Aquatic and Recreational Centre is a modern facility offerring group fitness classes and programmes for children. For some fun at night you are welcome to go to a bar with karaoke, bowling, a cinema and much more.
-                </p>
+                    Residents will enjoy access to Syndal train station, bus stops, Monach and Eastlink Freeways to reach Melbourne, shopping centers at Box Hill, Chadstone,  the Knox and The Glen.
+		</p>
+		<p>
+Syndal is surrounded by public parks with tennis court, walking and bike paths. Monash Aquatic and Recreational Centre is a modern facility offering  fitness classes and programmes for children. For some fun welcome to karaoke bar,  bowling, cinema and restaurants.
+		</p>
+		<p>
+The presents of Wesley college, Glen Waverley Secondary College,  Mount Waverley Secondary college, Holmesglen Institute, Monach 
+University  offers education opportunities and skills improvement.
+		</p>
             </div>
             <div class="col-md-6 col-xs-12">
-                <p>
-                    The presence of Wesley college, Glen Waverley Secondary College, Mount Waverley Secondary College, Holmesglen Institute, Monash University offers a lot of opportunities for education and skills improvement.
-                </p>
-                <div class="text-center location-logos">
-                    <img class="img-fluid" src="images/location-Monash-logo-.gif" alt="Monash"/>
-                    <img class="img-fluid" src="images/location-GW-logo.gif" alt="Glen Waverley"/>
-                    <img class="img-fluid" src="images/location-Aquatic-logo.gif" alt="Aquatic"/>
-                    <img class="img-fluid" src="images/location-Wesley-College-logo.gif" alt="Wesley College"/>
-                    <img class="img-fluid" src="images/location-Glen-logo.gif" alt="Glen"/>
+                <div class="text-center">
+                    <img class="img-fluid" src="images/location.jpg" alt="Location"/>
                 </div>
             </div>
 
             <div id="map" class="google-map"></div>
         </div>
-    </section>
-
-        
-    <section>
-        <a class="anchor" id="our-team"></a>
-        <h3 class="text-center">Our Partners</h3>
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <img class="img-fluid img-team" src="images/team-RPC-logo.gif" alt="RPC"/>
-                <p>
-                    RPC Architects has more than 30 years in arhitectural industry within the residential, industrial and commercial sectors. The company provides high design standards and a cost effective solution based on expert skills for the successful completion of every project. RPC Architects is focused on current design developments, legislative changes and the latest techniques in building to creat better environment for neighbourhood and the famillies who will call the place home.
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <img class="img-fluid img-team" src="images/team-JRW-logo.gif" alt="JRW"/>
-                <p>
-                    JRW Property International is an innovative and independent property advisory organization based in Melbourne specializing in selling, investment & management of residential, commercial and business properties. Established in 2006, JRW Property International's business comprises of a culturally diverse team and have gone from strength to strength living by the company motto 'We Get It Done'. With offices in Shanghai & Beijing we are able to tap into the overseas market through the company's wide network.
-                </p>
-            </div>
-        </div>
-
-    </section>
-        
+    </section>      
 
     <section>
         <a class="anchor" id="enquire-now"></a>
-        <h3 class="text-center">Register your interest</h3>
+        <h3>Register your interest</h3>
         <div class="row justify-content-center">
-            <div class="col-md-4 offset-md-2 col-xs-12">
-                <div class="contant-info">
+            <div class="col-md-6 col-xs-12">
+                <div class="contact-block">
+                    <div class="contact-heading">Contact our sales representative</div>
+
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="contact-img-logo" src="images/logo.png" />
+                            <img class="img-fluid" src="images/photo.png" />
+                        </div>
+
+                        <div class="col-md-6 col-xs-12">
+                            <div class="contact-info">
+                                <div class="contact-name">Mary Wang</div>
+                                <div class="contact-job">Sales Executive</div>
+                                <div class="contact-email">mary.wang@raywhite.com</div>
+                                <div class="contact-phone">0403 277 311</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <p>
-                        Contact our sales representative
-                        <br/>
-                        <br/>
-                        Leo Ren
-                        <br/>
-                        JRW Properties
-                        <br/>
-                        <br/>
-                        leo@jrwproperty.com.au
-                        <br/>
-                        <br/>
-                        0402 514 025
+                        Ray White is Australian leading real estate brand comprising of nearly 12,000 passionate property professionals and 1,000 franchises across 11 countries. Ray White agents have the knowledge, skills and experience to help maximise the value of your property. It`s the reason it sold more properties in Australia than any other real estate agency.
+                    </p>
+                    <p>
+                        Its called Ray White Know How.
                     </p>
                 </div>
             </div>

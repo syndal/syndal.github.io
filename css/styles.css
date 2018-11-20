@@ -3,9 +3,10 @@
 }
 
 h3 {
-    font-family: 'Dancing Script', serif;
-    color: #cc0033;
-    font-size: 44px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #090;
+    font-size: 32px;
     margin-bottom: 25px;
 }
 
@@ -16,7 +17,8 @@ h3 {
 }
 
 p {
-    font-family: 'Domine', serif;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
     color: #333;
     font-size: 18px;
 }
@@ -24,6 +26,9 @@ p {
 
 section {
     padding: 50px; 
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 767px) {
@@ -32,7 +37,7 @@ section {
     }
 }
 
-section.type-photo {
+header.type-photo {
     padding: 0;
     background-size: cover;
     background-position: top center;
@@ -40,25 +45,19 @@ section.type-photo {
     height: 100vh;
     min-height: 600px;
     position: relative;
-}
-
-
-section.type-photo {
     background-image: url('../images/photo-desktop.jpg');
 }
 
 
 .main-picture-ads {
     color: #333;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-    width: 340px;
-    height: 340px;
+    /*-ms-border-radius: 50%;
+    border-radius: 50%;*/
+    width: 480px;
+    height: 100%;
     position: absolute;
-    top: 100px;
+    top: 0;
     right: 0;
-    left: 0;
-    margin: 0 auto;
     background-color: #fff;
     -ms-opacity: 0.9;
     opacity: 0.9;
@@ -66,41 +65,51 @@ section.type-photo {
     font-size: 8px; /* base font size */
 }
 
+@media (max-width: 480px) {
+    .main-picture-ads {
+        width: 100%;
+        font-size: 6px;
+    }
+}
+
     .main-picture-ads .brand-name {
-        color: #CC0033;
-        padding-top: 60px;
+        padding-top: 170px;
     }
 
-.main-picture-ads .text-md {
-    font-size: 2em;
-    margin-top: 20px;
-}
+    .main-picture-ads .text-md {
+        font-size: 2.5em;
+        margin-top: 20px;
+        font-family: 'Playfair Display SC', serif;
+    }
 
-.main-picture-ads .text-lg {
-    font-size: 2.6em;
-    margin-top: 20px;
-}
+        .main-picture-ads .text-md span {
+            font-size: 1.5em;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+        }
+
+    .main-picture-ads .text-lg {
+        font-size: 4em;
+        margin-top: 20px;
+        font-family: 'Playfair Display SC', serif;
+    }
+
+    .main-picture-ads .enquire-now {
+        font-size: 2.5em;
+        margin-top: 80px;
+	font-weight: bold;
+        display: inline-block;
+        font-family: 'Playfair Display SC', serif;
+        background-color: #ffe512;
+        border: 2px solid #333;
+        padding: 5px 50px;
+        color: #333;
+    }
 
 .main-picture-ads .text-lg:last-child {
     margin-top: 0;
 }
 
-@media (min-width: 768px) {
-    .main-picture-ads {
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        top: 130px;
-        left: auto;
-        right: 130px;
-        font-size: 10px;
-    }
-    
-    .brand-name {
-        font-size: 50px;
-    }
-
-}
 
 .main-picture-menu {
     position: absolute;
@@ -166,10 +175,15 @@ a.anchor {
     background-color: #fff;
 }
 
+.navbar-dark .navbar-brand {
+    color: #009900!important;
+}
+
 .brand-name {
+    color: #009900;
     display: block;
-    font-family: 'Dancing Script', serif;
-    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 5em;
     font-weight: bold;
 }
 
@@ -194,22 +208,27 @@ a.anchor {
 }
 
 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
 .main-navbar > a:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
         .main-navbar .brand-name {
             display: block;
-            color: #fff;
             text-align: right;
             padding: 0;
             line-height: 0.9em;
             margin: 10px 45px 10px 0;
+            font-size:1.8em;
         }
 
     @media (max-width: 767px) {
         .main-navbar .brand-name {
             margin-left: 0;
+            font-size:1.5em;
         }
     }
 
@@ -221,7 +240,7 @@ a.anchor {
     }
 
     .main-navbar .nav-link.active {
-        border: 2px solid #CC0033;
+        border: 2px solid #ffe512;
     }
 
 .sticky-wrapper {
@@ -248,9 +267,53 @@ a.anchor {
     margin-bottom: 30px;
 }
 
-.contant-info {
+.contact-info {
     margin-top: 20px;
-    padding: 5%;
+}
+
+.contact-block {
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #333;
+}
+.contact-heading {
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    position: relative;
+    top:-30px;
+}
+
+.contact-name {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 22px;
+}
+
+.contact-job {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-email, contact-phone {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.contact-img-logo {
+    position: absolute;
+    width: 70px;
+    z-index: 1;
+    left: -35px;
+    top: -50px;
+}
+
+.contact-block p {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 16px;
 }
 
 footer {
