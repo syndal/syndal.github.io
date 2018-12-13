@@ -341,3 +341,12 @@ footer {
         padding-right: 0;
     }
 }*/
+
+.floor-plans {
+	text-align: center;
+}
+
+.floor-plans .img-responsive {
+	padding: 3em;
+	max-width: 320px;
+}
